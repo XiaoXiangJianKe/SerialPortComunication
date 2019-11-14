@@ -1,0 +1,9 @@
+c:\users\tyx\documents\visual studio 2013\Projects\SerialportComunication\SerialportComunication\bin\Debug\SerialportComunication.exe.config
+c:\users\tyx\documents\visual studio 2013\Projects\SerialportComunication\SerialportComunication\bin\Debug\SerialportComunication.exe
+c:\users\tyx\documents\visual studio 2013\Projects\SerialportComunication\SerialportComunication\bin\Debug\SerialportComunication.pdb
+c:\users\tyx\documents\visual studio 2013\Projects\SerialportComunication\SerialportComunication\obj\Debug\SerialportComunication.csprojResolveAssemblyReference.cache
+c:\users\tyx\documents\visual studio 2013\Projects\SerialportComunication\SerialportComunication\obj\Debug\SerialportComunication.Form1.resources
+c:\users\tyx\documents\visual studio 2013\Projects\SerialportComunication\SerialportComunication\obj\Debug\SerialportComunication.Properties.Resources.resources
+c:\users\tyx\documents\visual studio 2013\Projects\SerialportComunication\SerialportComunication\obj\Debug\SerialportComunication.csproj.GenerateResource.Cache
+c:\users\tyx\documents\visual studio 2013\Projects\SerialportComunication\SerialportComunication\obj\Debug\SerialportComunication.exe
+c:\users\tyx\documents\visual studio 2013\Projects\SerialportComunication\SerialportComunication\obj\Debug\SerialportComunication.pdb
