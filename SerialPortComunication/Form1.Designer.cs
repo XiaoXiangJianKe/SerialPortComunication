@@ -35,6 +35,12 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxStopBits = new System.Windows.Forms.ComboBox();
+            this.labelStopBits = new System.Windows.Forms.Label();
+            this.comboBoxDataBits = new System.Windows.Forms.ComboBox();
+            this.labelDataBits = new System.Windows.Forms.Label();
+            this.comboBoxParity = new System.Windows.Forms.ComboBox();
+            this.labelParity = new System.Windows.Forms.Label();
             this.buttonOpenSerial = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -42,11 +48,12 @@
             this.textBoxSend = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBoxReceive = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -102,8 +109,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.comboBoxStopBits);
+            this.groupBox1.Controls.Add(this.labelStopBits);
+            this.groupBox1.Controls.Add(this.comboBoxDataBits);
+            this.groupBox1.Controls.Add(this.labelDataBits);
+            this.groupBox1.Controls.Add(this.comboBoxParity);
+            this.groupBox1.Controls.Add(this.labelParity);
             this.groupBox1.Controls.Add(this.buttonOpenSerial);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.comboBox2);
@@ -111,10 +122,77 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(14, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(566, 125);
+            this.groupBox1.Size = new System.Drawing.Size(566, 150);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "串口设置";
+            // 
+            // comboBoxStopBits
+            // 
+            this.comboBoxStopBits.FormattingEnabled = true;
+            this.comboBoxStopBits.Items.AddRange(new object[] {
+            "None",
+            "One",
+            "Two",
+            "OnePointFive"});
+            this.comboBoxStopBits.Location = new System.Drawing.Point(73, 112);
+            this.comboBoxStopBits.Name = "comboBoxStopBits";
+            this.comboBoxStopBits.Size = new System.Drawing.Size(121, 20);
+            this.comboBoxStopBits.TabIndex = 13;
+            // 
+            // labelStopBits
+            // 
+            this.labelStopBits.AutoSize = true;
+            this.labelStopBits.Location = new System.Drawing.Point(16, 115);
+            this.labelStopBits.Name = "labelStopBits";
+            this.labelStopBits.Size = new System.Drawing.Size(53, 12);
+            this.labelStopBits.TabIndex = 12;
+            this.labelStopBits.Text = "停止位：";
+            // 
+            // comboBoxDataBits
+            // 
+            this.comboBoxDataBits.FormattingEnabled = true;
+            this.comboBoxDataBits.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.comboBoxDataBits.Location = new System.Drawing.Point(266, 74);
+            this.comboBoxDataBits.Name = "comboBoxDataBits";
+            this.comboBoxDataBits.Size = new System.Drawing.Size(121, 20);
+            this.comboBoxDataBits.TabIndex = 11;
+            // 
+            // labelDataBits
+            // 
+            this.labelDataBits.AutoSize = true;
+            this.labelDataBits.Location = new System.Drawing.Point(209, 77);
+            this.labelDataBits.Name = "labelDataBits";
+            this.labelDataBits.Size = new System.Drawing.Size(53, 12);
+            this.labelDataBits.TabIndex = 10;
+            this.labelDataBits.Text = "数据位：";
+            // 
+            // comboBoxParity
+            // 
+            this.comboBoxParity.FormattingEnabled = true;
+            this.comboBoxParity.Items.AddRange(new object[] {
+            "None",
+            "Odd",
+            "Even",
+            "Mark",
+            "Space"});
+            this.comboBoxParity.Location = new System.Drawing.Point(266, 36);
+            this.comboBoxParity.Name = "comboBoxParity";
+            this.comboBoxParity.Size = new System.Drawing.Size(121, 20);
+            this.comboBoxParity.TabIndex = 9;
+            // 
+            // labelParity
+            // 
+            this.labelParity.AutoSize = true;
+            this.labelParity.Location = new System.Drawing.Point(209, 39);
+            this.labelParity.Name = "labelParity";
+            this.labelParity.Size = new System.Drawing.Size(53, 12);
+            this.labelParity.TabIndex = 8;
+            this.labelParity.Text = "校验位：";
             // 
             // buttonOpenSerial
             // 
@@ -139,7 +217,7 @@
             // 
             this.groupBox2.Controls.Add(this.buttonSend);
             this.groupBox2.Controls.Add(this.textBoxSend);
-            this.groupBox2.Location = new System.Drawing.Point(14, 177);
+            this.groupBox2.Location = new System.Drawing.Point(14, 202);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(387, 100);
             this.groupBox2.TabIndex = 7;
@@ -166,57 +244,56 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.textBoxReceive);
-            this.groupBox3.Location = new System.Drawing.Point(14, 311);
+            this.groupBox3.Location = new System.Drawing.Point(14, 336);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(387, 116);
+            this.groupBox3.Size = new System.Drawing.Size(387, 131);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "接收数据";
             // 
             // textBoxReceive
             // 
+            this.textBoxReceive.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxReceive.Location = new System.Drawing.Point(18, 32);
             this.textBoxReceive.Multiline = true;
             this.textBoxReceive.Name = "textBoxReceive";
             this.textBoxReceive.ReadOnly = true;
-            this.textBoxReceive.Size = new System.Drawing.Size(338, 62);
+            this.textBoxReceive.Size = new System.Drawing.Size(338, 82);
             this.textBoxReceive.TabIndex = 0;
             this.textBoxReceive.TextChanged += new System.EventHandler(this.textBoxReceive_TextChanged);
             // 
-            // comboBox3
+            // groupBox4
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "4800",
-            "9600",
-            "19200",
-            "38400",
-            "115200"});
-            this.comboBox3.Location = new System.Drawing.Point(266, 36);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 20);
-            this.comboBox3.TabIndex = 9;
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Location = new System.Drawing.Point(603, 22);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(387, 428);
+            this.groupBox4.TabIndex = 9;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "接收数据";
             // 
-            // label4
+            // textBox1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(209, 39);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "校验位：";
+            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Location = new System.Drawing.Point(18, 32);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(338, 377);
+            this.textBox1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 455);
+            this.ClientSize = new System.Drawing.Size(1011, 499);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "SerialPortComunication v1.0";
+            this.Text = "SerialPortComunication v1.02";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
@@ -225,6 +302,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,8 +324,14 @@
         private System.Windows.Forms.TextBox textBoxSend;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBoxReceive;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBoxParity;
+        private System.Windows.Forms.Label labelParity;
+        private System.Windows.Forms.ComboBox comboBoxDataBits;
+        private System.Windows.Forms.Label labelDataBits;
+        private System.Windows.Forms.ComboBox comboBoxStopBits;
+        private System.Windows.Forms.Label labelStopBits;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

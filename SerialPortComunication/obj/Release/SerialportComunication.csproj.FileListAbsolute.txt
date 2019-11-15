@@ -1,9 +1,9 @@
 C:\Users\TYX\Documents\Visual Studio 2013\Projects\SerialportComunication\SerialportComunication\bin\Release\SerialportComunication.exe.config
 C:\Users\TYX\Documents\Visual Studio 2013\Projects\SerialportComunication\SerialportComunication\bin\Release\SerialportComunication.exe
 C:\Users\TYX\Documents\Visual Studio 2013\Projects\SerialportComunication\SerialportComunication\bin\Release\SerialportComunication.pdb
-C:\Users\TYX\Documents\Visual Studio 2013\Projects\SerialportComunication\SerialportComunication\obj\Release\SerialportComunication.csprojResolveAssemblyReference.cache
 C:\Users\TYX\Documents\Visual Studio 2013\Projects\SerialportComunication\SerialportComunication\obj\Release\SerialportComunication.Form1.resources
 C:\Users\TYX\Documents\Visual Studio 2013\Projects\SerialportComunication\SerialportComunication\obj\Release\SerialportComunication.Properties.Resources.resources
 C:\Users\TYX\Documents\Visual Studio 2013\Projects\SerialportComunication\SerialportComunication\obj\Release\SerialportComunication.csproj.GenerateResource.Cache
 C:\Users\TYX\Documents\Visual Studio 2013\Projects\SerialportComunication\SerialportComunication\obj\Release\SerialportComunication.exe
 C:\Users\TYX\Documents\Visual Studio 2013\Projects\SerialportComunication\SerialportComunication\obj\Release\SerialportComunication.pdb
+C:\Users\TYX\Documents\Visual Studio 2013\Projects\SerialPortComunication\SerialportComunication\obj\Release\SerialPortComunication.csprojResolveAssemblyReference.cache
