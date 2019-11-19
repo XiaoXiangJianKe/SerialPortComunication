@@ -260,7 +260,7 @@
             this.textBoxReceive.ReadOnly = true;
             this.textBoxReceive.Size = new System.Drawing.Size(338, 82);
             this.textBoxReceive.TabIndex = 0;
-            this.textBoxReceive.TextChanged += new System.EventHandler(this.textBoxReceive_TextChanged);
+            //this.textBoxReceive.TextChanged += new System.EventHandler(this.textBoxReceive_TextChanged);
             // 
             // groupBox4
             // 
